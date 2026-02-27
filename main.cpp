@@ -18,7 +18,7 @@ void checkStack(int* parentAddr) {
     cout << "param addr (child frame)       : " << (void*)&parentAddr << endl;
     cout << "child local addr (childFrame)  : " << (void*)&childVar << endl;
     cout << "Stack grows: "
-         << (parentAddr > &childVar ? "DOWN (parent frame > childFrame)" : "UP")
+         << (parentAddr > &childVar ? "DOWN (parent frame > child frame)" : "UP")
          << endl;
     cout << endl;
 }
