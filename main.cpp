@@ -16,7 +16,7 @@ void checkStack(int* parentAddr) {
     cout << "--- STACK SEGMENT (Cross-function comparison) ---" << endl;
     cout << "main local addr (parent frame) : " << (void*)parentAddr << endl;
     cout << "param addr (child frame)       : " << (void*)&parentAddr << endl;
-    cout << "child local addr (childFrame)  : " << (void*)&childVar << endl;
+    cout << "child local addr (child frame)  : " << (void*)&childVar << endl;
     cout << "Stack grows: "
          << (parentAddr > &childVar ? "DOWN (parent frame > child frame)" : "UP")
          << endl;
