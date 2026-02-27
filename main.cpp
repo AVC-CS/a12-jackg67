@@ -12,7 +12,7 @@ int uninitGlobal2;
 // and compares with a local variable (child frame)
 
 void checkStack(int* parentAddr) {
-    int*childVar = 99;
+     int childVar = 99;
     cout << "--- STACK SEGMENT (Cross-function comparison) ---" << endl;
     cout << "main local addr (parent frame) : " << (void*)parentAddr << endl;
     cout << "param addr (child frame)       : " << (void*)&parentAddr << endl;
